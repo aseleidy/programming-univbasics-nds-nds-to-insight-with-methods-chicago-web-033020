@@ -5,8 +5,7 @@ require 'directors_database'
 # using director_data as input
 def gross_for_director(director_data)
   director_index = 0 
-  
-  while director_index < director_data.length do
+  director_data[director_index][:name]
   
     movie_index = 0
     director_gross = 0
@@ -19,7 +18,7 @@ def gross_for_director(director_data)
     director_gross
     
     director_index += 1
-  end
+
 end
 
 # Write a method that, given an NDS creates a new Hash
